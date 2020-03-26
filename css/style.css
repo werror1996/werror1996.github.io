@@ -171,9 +171,15 @@ body{
     padding: 0;
     margin: 0;
 }
+/* SERVICE */
+.service__content{
+    display: flex;
+    justify-content: space-between;
+}
 /* FOOTER */
 footer{
     background-color: #313131;
     line-height: 50px;
     color: #fff;
+    margin: 0;
 }
