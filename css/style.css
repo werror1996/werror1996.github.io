@@ -1,7 +1,10 @@
 *{
     box-sizing: border-box;
 }
-
+body{
+    font-size: 14px;
+    font-family: sans-serif;
+}
 .container{
     max-width: 1170px;
     margin: 0 auto;
@@ -75,6 +78,57 @@
 .fon_text p{
     padding: 0;
     margin-left: 0;
+}
+/* ABOUT */
+.partners{
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.partners h2{
+    color: turquoise;
+}
+.partner{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    text-align: center;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 7px;
+    box-shadow: 3px 3px 7px rgba(129, 129, 129, 0.582);
+}
+.item img{
+    width: 225px;
+    height: 150px;
+}
+.item figure{
+    margin: 0 0 10px 0;
+}
+.workmain{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.workers{
+    display: flex;
+    justify-content: space-between;
+}
+.workmain h2{
+    color: turquoise;
+}
+.worker{
+    max-width: 33%;
+    height: 250px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 7px;
+    box-shadow: 3px 3px 7px rgba(129, 129, 129, 0.582);
+    padding: 5px 30px 5px 30px;
+}
+.worker img{
+    width: 150px;
+    height: 150px;
 }
 /* CATALOG */
 .content-catalog{
