@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.header__topbcg{
+    background-color: #313131;
+}
+.header__phone, .header__mail, .header__btn {
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.header__phone, .header__mail{
+    padding-left: 30px;
+    letter-spacing: 0.25px;
+}
+.header__btn{
+    float: right;
+    border: 2px solid rgb(250, 172, 54);
+    padding: 0px 20px 0px 20px;
+    line-height: 36px;
+}
+.header__btn:hover{
+    background-color: rgb(250, 172, 54);
+    text-decoration: underline;
+}
+.header__btn::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/* .menu{} */
+.menu::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.menu ul{
+    /* display: inline-block; */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* .menu ul li{ 
+    display: inline;
+}*/
+.menu a{
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+.fon{
+    background-image: url(/img/gorod.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 500px;
+}
+.fon__text{
+    color: white;
+    text-align: center;
+}
+.fon__text h1{
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+.fon_text p{
+    padding: 0;
+    margin-left: 0;
+}
+/* CATALOG */
+.content-catalog{
+    display: flex;
+}
+.property{
+    max-width: 80%;
+    margin-right: 20px;
+}
+.property h2{
+    color: turquoise;
+}
+.product{
+    display: inline-block;
+    width: 33%;
+    height: 400px;
+    text-align: center;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    vertical-align: top;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.product img{
+    width: 170px;
+    height: 120px;
+}
+.sidebar-right{
+    max-width: 20%;
+    height: max-content;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    padding: 10px;
+}
+.sidebar-right h3{
+    color: turquoise;
+}
+.sidebar-right ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/* FOOTER */
+footer{
+    background-color: #313131;
+    line-height: 50px;
+    color: #fff;
+}
