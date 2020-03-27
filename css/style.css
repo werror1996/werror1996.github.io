@@ -44,14 +44,14 @@ body{
     display: block;
 }
 .menu ul{
-    /* display: inline-block; */
+    display: inline-block;
     list-style: none;
     padding: 0;
     margin: 0;
 }
-/* .menu ul li{ 
+.menu ul li{ 
     display: inline;
-}*/
+}
 .menu a{
     text-decoration: none;
     color: rgb(136, 136, 136);
@@ -170,6 +170,12 @@ body{
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+.sort__by label{
+    cursor: pointer;
+}
+.sort__by input{
+    cursor: pointer;
 }
 /* SERVICE */
 .service__content{
