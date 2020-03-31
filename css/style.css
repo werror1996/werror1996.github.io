@@ -157,8 +157,8 @@ body{
 .diver::before{
     content: '';
     display: inline-block;
-    width: 70px;
-    border: 2px solid rgb(250, 172, 54);
+    width: 90px;
+    border: 1px solid rgb(250, 172, 54);
     margin: 0;
     padding: 0;
 }
