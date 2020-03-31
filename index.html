@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Агентство недвижимости ОКО</title>
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic,cyrillic-ext"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -15,36 +17,84 @@
         <div class="header__topbcg">
             <div class="container">
                 <div class="header__top">
-                    <a class="header__mail" href="mailto:OKOrealestate@gmail.com">OKOrealestate@gmail.com</a>
-                    <a class="header__phone" href="tel:+74957778797">+7 (495) 777-87-97</a>
-                    <a class="header__btn" href="#">Заказать звонок</a>
+                    <div class="contacts">
+                        <a class="header__mail" href="mailto:OKOrealestate@gmail.com">OKOrealestate@gmail.com</a>
+                        <a class="header__phone" href="tel:+74957778797">+7 (495) 777-87-97</a>
+                    </div>
+                    <div class="button">
+                        <a class="header__btn" href="#">Заказать звонок</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container nav">
             <div class="header__logo">
                 <a href="index.html">
                     <img src="img/logo.png" alt="logotip">
                 </a>
             </div>
-        <nav class="container menu">
-            <ul>
-                <li><a href="index.html" style="color: turquoise;">Главная</a></li>
-                <li><a href="about.html">О компании</a></li>
-                <li><a href="service.html">Услуги</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="contact.html">Контакты</a></li>
-            </ul>
-        </nav>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" style="color: turquoise;">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="service.html">Услуги</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <section class="fon">
-        <div class="container">
-            <div class="fon__text">
-                <h1>Найди свой дом вместе с нами!</h1>
-                <p>Мы являемся лидером среди агентств по недвижимости.Здесь вы сможете подобрать квартиру по любому запросу,а мы поможем!</p>
+    <section>
+        <div id="wrap">
+            <div class="slider">
+                <div class="wrap">
+                    <div class="slider_content">
+                        <div class="arrow_slider_left">
+                            <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-arrow-left"></i></a>
+                        </div>
+                        <div class='items'>
+                            <div class="text">
+                                <h1>Найди свой дом вместе с нами</h1>
+                                <p>Мы являемся лидером среди агентств по недвижимости.Здесь вы сможете подобрать
+                                    квартиру по
+                                    любому
+                                    запросу,а мы поможем!</p>
+                                    <div class="slider_btn">
+                                        <a href="catalog.html">В каталог</a>
+                                    </div>
+                            </div>
+                            <div class="text">
+                                <h1>Нужна юридическая помощь</h1>
+                                <p>Обращайтесь к нашим специалистам.</p>
+                                <div class="slider_btn">
+                                    <a href="catalog.html">Подобрать</a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h1>Найди свой дом вместе с нами</h1>
+                                <p>Мы являемся лидером среди агентств по недвижимости.Здесь вы сможете подобрать
+                                    квартиру по
+                                    любому
+                                    запросу,а мы поможем!</p>
+                                <div class="slider_btn">
+                                    <a href="catalog.html">Подобрать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow_slider_right">
+                            <a class='next' onclick="plusSlides(1)"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
             </div>
         </div>
+
     </section>
     <main>
         <div class="container">
@@ -75,6 +125,7 @@
             <p>&copy; Агентство недвижимости "ОКО" 2015-2020</p>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
