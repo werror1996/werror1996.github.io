@@ -130,12 +130,17 @@ body{
     justify-content: center;
 }
 .text{
-    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 280px;
+    max-width: 500px;
     text-align: center;
     -webkit-animation-name:fade;
     -webkit-animation-duration: 1s;
     animation-name:fade;
     animation-duration: 1s;
+    position: relative;
 }
 @-webkit-keyframes fade {
     from{opacity: 0.2};
@@ -149,7 +154,14 @@ body{
     from{opacity: 0.2;}
     to{opacity: 1;}
 }
-
+.diver::before{
+    content: '';
+    display: inline-block;
+    width: 70px;
+    border: 2px solid rgb(250, 172, 54);
+    margin: 0;
+    padding: 0;
+}
 .text h1{
     font-size: 44px;
     font-family: 'Roboto', sans-serif;
@@ -161,7 +173,7 @@ body{
 .text P{
     font-family: 'Roboto', sans-serif;
     color: rgb(252, 248, 213);
-    margin: 0;
+    margin: 40px 0 0 0;
     padding: 0;
 }
 .text a{
@@ -169,11 +181,15 @@ body{
     padding: 4px 20px;
     background-color: rgb(56, 168, 157);
     text-decoration: none;
+    border-radius: 7px;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     color: #fff;
 }
 .slider_btn{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     margin-top: 40px;
 }
 .arrow_slider_left, .arrow_slider_right{
