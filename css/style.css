@@ -266,6 +266,12 @@ body{
     padding: 0;
 }
 /* ABOUT */
+.tha p{
+    font-size: 16px;
+}
+.dots{
+    color: turquoise;
+}
 .partners{
     max-width: 100%;
     text-align: center;
