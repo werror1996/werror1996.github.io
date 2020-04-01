@@ -7,6 +7,16 @@ body{
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
+h2{
+    color: rgb(136, 136, 136);
+}
+h3{
+    font-size: 28px;
+    color: #4b4b4b;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+}
 .container{
     max-width: 1024px;
     margin: 0 auto;
@@ -230,13 +240,7 @@ body{
     padding-left: 20px;
     padding-right: 20px;
 }
-.texthome h3{
-    font-size: 28px;
-    color: #4b4b4b;
-    padding: 0;
-    margin: 0 0 20px 0;
-    font-weight: 700;
-}
+
 .texthome p{
     color: #8b8b8b;
     font-size: 12px;
@@ -277,10 +281,14 @@ body{
     text-align: center;
     margin-bottom: 50px;
     font-weight: bold;
+    margin-top: 40px;
 }
 .partners h2{
-    color: turquoise;
+    color: rgb(136, 136, 136);
     font-weight: 700;
+}
+.partners figcaption{
+    color: turquoise;
 }
 .partner{
     display: flex;
@@ -291,6 +299,7 @@ body{
     border: 1px solid rgb(206, 206, 206);
     border-radius: 7px;
     box-shadow: 3px 3px 7px rgba(129, 129, 129, 0.582);
+    margin-top: 30px;
 }
 .item img{
     width: 225px;
@@ -301,26 +310,38 @@ body{
 }
 .workmain{
     text-align: center;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
 }
 .workers{
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 .workmain h2{
-    color: turquoise;
+    color: rgb(136, 136, 136);
 }
 .worker{
-    max-width: 33%;
+    width: 300px;
     border: 1px solid rgb(206, 206, 206);
     border-radius: 7px;
     box-shadow: 3px 3px 7px rgba(129, 129, 129, 0.582);
     padding: 5px 30px 5px 30px;
+    margin-bottom: 20px;
 }
 .worker img{
     width: 150px;
     height: 150px;
+}
+.worker p{
+    font-size: 12px;
+    text-align: left;
+    line-height: 20px;
+    font-weight: 700;
+}
+.worker a{
+    color: turquoise;
+    text-decoration: none;
 }
 /* CATALOG */
 .content-catalog{
@@ -370,9 +391,40 @@ body{
     cursor: pointer;
 }
 /* SERVICE */
+.service {
+    margin-top: 40px;
+}
 .service__content{
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(136, 136, 136, 0.603);
+    box-shadow: 3px 3px 7px rgba(129, 129, 129, 0.582);
+    border-radius: 5px;
+}
+.item_s{
+    padding: 5px 15px;
+    width: 200px;
+    font-size: 14px;
+}
+.service_item{
+    text-align: center;
+}
+.texthome ul{
+color: #8b8b8b;
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+}
+.texthome ul li::before{
+    content: '\f00c';
+    font-family: 'FontAwesome';
+    position: absolute;
+    left: -18px;
+    color: rgb(250, 172, 54);
 }
 /* FOOTER */
 footer{
