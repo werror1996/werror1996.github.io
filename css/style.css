@@ -523,7 +523,7 @@ footer{
     color:rgb(250, 172, 54);
 }
 .adress::before{
-    content: '\f041';
+    content: '\f064';
     font-family: 'FontAwesome';
     color: rgb(250, 172, 54);
 }
