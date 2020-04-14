@@ -1,0 +1,2 @@
+User-agent: Yandex
+Sitemap: https://werror1996.github.io/sitemap.xml
