@@ -413,16 +413,23 @@ h3{
 .sidebar-right h3{
     color: turquoise;
 }
+
 .sidebar-right ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+.sidebar-right input{
+    margin: 5px 0;
 }
 .sort__by label{
     cursor: pointer;
 }
 .sort__by input{
     cursor: pointer;
+}
+.sort_ar{
+    margin-top: 7px;
 }
 /* SERVICE */
 .service {
