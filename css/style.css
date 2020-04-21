@@ -463,6 +463,12 @@ h3{
     text-decoration: none;
     color: black;
 }
+#active_page{
+    background-color: #313131;
+}
+#active_page a{
+    color: #fff;
+}
 /* SERVICE */
 .service {
     margin-top: 40px;
