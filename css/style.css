@@ -93,16 +93,17 @@ h3{
     display: flex;
 }
 .menu ul{
+    position: relative;
     display: inline-block;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 .menu ul li{ 
-    display: inline;
+    display: inline-block;
     font-size: 16px;
 }
-.menu ul li:not(:first-child){ 
+.menu .open__menu > li:not(:first-child){ 
     margin-left: 40px;
 }
 .menu a{
@@ -111,6 +112,50 @@ h3{
 }
 .menu a:hover{
     text-decoration: underline;
+}
+.menu .hiden__menu {
+    position: absolute;
+    opacity: 0;
+        transform: scaleY(0);
+        transform-origin: 0 0;
+        transition: .6s ease-in-out;
+    z-index: 5;
+    top: 100%;
+    left: -85%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 0px 0px 5px 5px;
+}
+.menu ul ul > li{
+    margin-left: 0;
+    padding: 10px 5px;
+    display: block;
+    
+}
+@-webkit-keyframes slidein{
+    from{margin-left: -100%};
+    to{margin-left: 100%};
+}
+@keyframes slidein{
+    from{margin-left: -100%};
+    to{margin-left: 100%;};
+}
+.menu ul ul > li a{
+    cursor: pointer;
+}
+.menu li:hover .hiden__menu{
+    opacity: 1;
+        transform: scaleY(1);
+}
+#open__menu{
+    position: relative;
+}
+.menu #open__menu::before{
+    content: "\2304";
+    color: rgb(136, 136, 136);
+    position: absolute;
+    top: -25%;
+    left: -20%;
 }
 /* SLIDER */
 #wrap{
@@ -421,6 +466,7 @@ h3{
     margin: 0;
 }
 .sidebar-right input{
+    padding: 5px 0;
     margin: 5px 0;
 }
 .sort__by label{
@@ -607,11 +653,13 @@ footer{
 }
 .newsspam form{
     position: relative;
+    padding-top: 10px;
 }
 .newsspam form > input{
     outline: none;
     border: none;
     border-radius: 3px;
+    padding: 5px 0;
 }
 .newsspam form > button{
     background-color: turquoise;
