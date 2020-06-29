@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
     body{
+        overflow-x: hidden;
         font-size: 16px;
-        margin: 5px;
     }
     h1{
         font-size: 24px;
@@ -29,24 +29,91 @@
         display: none;
     }
     .nav{
-        flex-direction: column;
+        display: flex;
+        justify-content: flex-end;
         background-color: #313131;
+        align-items: end;
     }
-    .menu{
-        margin: 0 auto;
+    .menu {
+        background-color: #313131;
+    display: flex;
+    position: absolute;
+    width: 30vh;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    transform: translatex(100%);
+    top: 69px;
+    right: 0px;
+    z-index: 1000;
+    }
+    
+    .menu ul {
+        position: relative;
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
     }
     .menu a{
         color: #fff;
     }
+    /* .menu ul{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+        padding: 30px 0px 0px 0px;
+        margin: 0;
+    } */
     .menu ul li{
         display: block;
         text-align: center;
     }
     .menu ul li:not(:first-child){
-        margin: 0;
+        margin-top: 40px;
     }
     .header__logo{
         display: none;
+    }
+    .menu .header__logo{
+        display: none;
+    }
+    .menu li:hover .hiden__menu{
+        opacity: 0;
+    }
+    .menu #open__menu::before{
+        display: none;
+    }
+    .menu .open__menu > li:not(:first-child){ 
+        margin-left: 0px;
+    }
+        
+    .open__menu li{
+        margin: 0;
+    }
+    .mobile_btn span, .mobile_btn span::before, .mobile_btn span::after{
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -10px;
+        z-index: 3;
+    }
+    .mobile_menu{
+        cursor: pointer;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    .menu_active{
+        transform: translatex(0%);
+        
     }
     /* MAIN */
     .contentmain{
@@ -131,6 +198,9 @@
 @media (max-width:600px){
     body{
         font-size: 14px;
+    }
+    .menu .header__logo{
+        display: none;
     }
     .product{
         width: 100%;

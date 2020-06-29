@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic,cyrillic-ext"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min.style.css">
     <link rel="stylesheet" href="css/mobile.css">
 </head>
 
@@ -34,11 +34,20 @@
                 </a>
             </div>
             <nav class="menu">
-                <ul>
+                <ul class="open__menu">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="about.html">О компании</a></li>
                     <li><a href="service.html">Услуги</a></li>
-                    <li><a href="catalog.html"  style="color: turquoise;">Каталог</a></li>
+                    <li id="open__menu"><a href="catalog.html" style="color: turquoise;">Каталог</a>
+
+                        <ul class="hiden__menu">
+                            <li><a href="#">Однокомнатные</a></li>
+                            <li><a href="#">Двухкомнатные</a></li>
+                            <li><a href="#">Трехкомнатные</a></li>
+                            <li><a href="#">Четырехкомнатные</a></li>
+                        </ul>
+
+                    </li>
                     <li><a href="contact.html">Контакты</a></li>
                 </ul>
             </nav>
