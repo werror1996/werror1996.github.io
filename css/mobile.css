@@ -1,3 +1,11 @@
+@media (max-width:900px){
+    .contentmain{
+        margin-top: 40px;
+    }
+    .itemhome img{
+        width: 350px;
+    }
+}
 @media (max-width: 768px) {
     body{
         overflow-x: hidden;
