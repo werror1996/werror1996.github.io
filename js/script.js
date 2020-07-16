@@ -25,13 +25,18 @@ function showSlides(n) {
         
     
     slides[slideIndex-1].style.display = "block";
-}
+};
 
 
+const modalBtn = document.querySelector('.modal_btn')
+const modalBg = document.querySelector('.modal_bg')
+const modalClose = document.querySelector('.modal_close')
 
 
+modalBtn.addEventListener('click', function () {
+    modalBg.classList.add('modal_active')
+})
 
-
-
-
-
+modalClose.addEventListener('click', function () {
+    modalBg.classList.remove('modal_active')
+})
